@@ -23,10 +23,10 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
 START_MSG = """
-**Assalomu alaykum, Men siz uchun o'zbek tilidagi filmlarni izlab topaman**
+**Assalomu alaykum, Men siz uchun o'zbek tilidagi kitoblarni izlab topaman**
 
 Qidiruvni boshlash uchun quyidagi tugmachani bosing.
 @ovoza
 """
 
-SHARE_BUTTON_TEXT = 'Filmlarni qidirish uchun {username} botiga tashrif buyuring'
+SHARE_BUTTON_TEXT = 'Kitoblarni qidirish uchun {username} botiga tashrif buyuring'

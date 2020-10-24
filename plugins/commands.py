@@ -13,7 +13,7 @@ async def start(bot, message):
     """Start command handler"""
     buttons = [[
         InlineKeyboardButton('Izlash', switch_inline_query_current_chat=''),
-        InlineKeyboardButton('Shu yerda izlash', switch_inline_query=''),
+        InlineKeyboardButton('Do`st uchun izlash', switch_inline_query=''),
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply(START_MSG, reply_markup=reply_markup)
@@ -91,6 +91,6 @@ async def delete(bot, message):
         'caption': reply.caption
     })
     if result.deleted_count:
-        await msg.edit('Filmlar omboridan ochirildi')
+        await msg.edit('Kitoblar omboridan ochirildi')
     else:
-        await msg.edit('Bu film topilmadi')
+        await msg.edit('Bu kitob topilmadi')

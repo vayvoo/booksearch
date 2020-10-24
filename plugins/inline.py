@@ -36,7 +36,7 @@ async def answer(bot, query):
 
     if results:
         count = len(results)
-        switch_pm_text = f"{emoji.FILE_FOLDER} {count} Natija{'lar' if count > 1 else ''}"
+        switch_pm_text = f"{emoji.FILE_FOLDER} {count} ta Natija{'lar' if count > 1 else ''}"
         if string:
             switch_pm_text += f" for {string}"
 
@@ -49,7 +49,7 @@ async def answer(bot, query):
 
         switch_pm_text = f'{emoji.CROSS_MARK} Hech nima topilmadi'
         if string:
-            switch_pm_text += f' for "{string}"'
+            switch_pm_text += f' .  sizning so `rovingiz "{string}"'
 
         await query.answer(results=[],
                            cache_time=CACHE_TIME,
